@@ -3,7 +3,7 @@
 require 'vegas'
 
 app= Proc.new{|env|
-  [200,{'Content-type' => 'text/plain'},["This is an app.
+  [200,{'Content-type' => 'text/html'},["<h1>This is web server X.</h1><p/>
 #{env.inspect}"]]
 }
 
